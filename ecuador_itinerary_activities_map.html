@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ef562586c8eb40804b00d7b341ec6ae6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ef562586c8eb40804b00d7b341ec6ae6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ef562586c8eb40804b00d7b341ec6ae6 = L.map(
+                "map_ef562586c8eb40804b00d7b341ec6ae6",
+                {
+                    center: [-1.5, -78.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6e3724cda2fa7944e92133c0a2878fbe = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var marker_201a117e077a195ad5099117a3fc08c3 = L.marker(
+                [-0.1807, -78.4675],
+                {}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var icon_57ebd1c089f7818d7caa4c9d9a8766ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_201a117e077a195ad5099117a3fc08c3.setIcon(icon_57ebd1c089f7818d7caa4c9d9a8766ba);
+        
+    
+        var popup_e90848c615f43ac38a9258bcf08a81df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bcec3ade1509286f2c36cdd5ec20e29 = $(`<div id="html_6bcec3ade1509286f2c36cdd5ec20e29" style="width: 100.0%; height: 100.0%;">Quito (Start)</div>`)[0];
+            popup_e90848c615f43ac38a9258bcf08a81df.setContent(html_6bcec3ade1509286f2c36cdd5ec20e29);
+        
+
+        marker_201a117e077a195ad5099117a3fc08c3.bindPopup(popup_e90848c615f43ac38a9258bcf08a81df)
+        ;
+
+        
+    
+    
+            marker_201a117e077a195ad5099117a3fc08c3.bindTooltip(
+                `<div>
+                     Quito (Start)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70663f0a069904dac9ea0c75b816fd59 = L.marker(
+                [-0.6808, -78.437],
+                {}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var icon_1b77cf5fb0e414205f94e0560e7024bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_70663f0a069904dac9ea0c75b816fd59.setIcon(icon_1b77cf5fb0e414205f94e0560e7024bb);
+        
+    
+        var popup_eb602998d5e8d39ed805bbbc15784dc9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2898814094d5609772cea99b6e0b0cd9 = $(`<div id="html_2898814094d5609772cea99b6e0b0cd9" style="width: 100.0%; height: 100.0%;">Cotopaxi National Park - Hiking & Biking</div>`)[0];
+            popup_eb602998d5e8d39ed805bbbc15784dc9.setContent(html_2898814094d5609772cea99b6e0b0cd9);
+        
+
+        marker_70663f0a069904dac9ea0c75b816fd59.bindPopup(popup_eb602998d5e8d39ed805bbbc15784dc9)
+        ;
+
+        
+    
+    
+            marker_70663f0a069904dac9ea0c75b816fd59.bindTooltip(
+                `<div>
+                     Cotopaxi National Park - Hiking & Biking
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92b789ca8bdd68d110cbf0b91d315fdd = L.marker(
+                [-1.3964, -78.4247],
+                {}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var icon_1ae6b580e39e15c13ff2f0876a719205 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_92b789ca8bdd68d110cbf0b91d315fdd.setIcon(icon_1ae6b580e39e15c13ff2f0876a719205);
+        
+    
+        var popup_5710e4c69712957f915e64f93d8fe02b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5045d032c2936952b38c058e2e7a1f0 = $(`<div id="html_e5045d032c2936952b38c058e2e7a1f0" style="width: 100.0%; height: 100.0%;">Baños - Waterfalls, Rafting, Bungee Jumping</div>`)[0];
+            popup_5710e4c69712957f915e64f93d8fe02b.setContent(html_e5045d032c2936952b38c058e2e7a1f0);
+        
+
+        marker_92b789ca8bdd68d110cbf0b91d315fdd.bindPopup(popup_5710e4c69712957f915e64f93d8fe02b)
+        ;
+
+        
+    
+    
+            marker_92b789ca8bdd68d110cbf0b91d315fdd.bindTooltip(
+                `<div>
+                     Baños - Waterfalls, Rafting, Bungee Jumping
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1331f54d07cdd10608a492ec381248e0 = L.marker(
+                [-2.1894, -79.8891],
+                {}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var icon_a79d914eeec343d6e289d66e09161d78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1331f54d07cdd10608a492ec381248e0.setIcon(icon_a79d914eeec343d6e289d66e09161d78);
+        
+    
+        var popup_1d8933edc490c13419e11a571fba38e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be4c02a9eb054608b9c7c1008a755596 = $(`<div id="html_be4c02a9eb054608b9c7c1008a755596" style="width: 100.0%; height: 100.0%;">Guayaquil - Transit Hub</div>`)[0];
+            popup_1d8933edc490c13419e11a571fba38e2.setContent(html_be4c02a9eb054608b9c7c1008a755596);
+        
+
+        marker_1331f54d07cdd10608a492ec381248e0.bindPopup(popup_1d8933edc490c13419e11a571fba38e2)
+        ;
+
+        
+    
+    
+            marker_1331f54d07cdd10608a492ec381248e0.bindTooltip(
+                `<div>
+                     Guayaquil - Transit Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b629614f25232f0f25c67b594c1004b = L.marker(
+                [-0.4444, -90.2786],
+                {}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var icon_313dcafb75654af1cb71232be13c3478 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3b629614f25232f0f25c67b594c1004b.setIcon(icon_313dcafb75654af1cb71232be13c3478);
+        
+    
+        var popup_ab70421cc9ac3a5798aafe961fa0549c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_337658ff06a99687594314960810a180 = $(`<div id="html_337658ff06a99687594314960810a180" style="width: 100.0%; height: 100.0%;">Baltra (Galápagos) - Entry Point</div>`)[0];
+            popup_ab70421cc9ac3a5798aafe961fa0549c.setContent(html_337658ff06a99687594314960810a180);
+        
+
+        marker_3b629614f25232f0f25c67b594c1004b.bindPopup(popup_ab70421cc9ac3a5798aafe961fa0549c)
+        ;
+
+        
+    
+    
+            marker_3b629614f25232f0f25c67b594c1004b.bindTooltip(
+                `<div>
+                     Baltra (Galápagos) - Entry Point
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02ba287fd26562b6c5731495f09c85c6 = L.marker(
+                [-0.7406, -90.3133],
+                {}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var icon_5f0600ac24020ee0837983466f64f247 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_02ba287fd26562b6c5731495f09c85c6.setIcon(icon_5f0600ac24020ee0837983466f64f247);
+        
+    
+        var popup_ba63ec961ab40c52bfcab37154afe93a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6f9e7c0c08d255af0c9aeb6b0b3a60d = $(`<div id="html_e6f9e7c0c08d255af0c9aeb6b0b3a60d" style="width: 100.0%; height: 100.0%;">Puerto Ayora (Galápagos) - Tortoises & Snorkeling</div>`)[0];
+            popup_ba63ec961ab40c52bfcab37154afe93a.setContent(html_e6f9e7c0c08d255af0c9aeb6b0b3a60d);
+        
+
+        marker_02ba287fd26562b6c5731495f09c85c6.bindPopup(popup_ba63ec961ab40c52bfcab37154afe93a)
+        ;
+
+        
+    
+    
+            marker_02ba287fd26562b6c5731495f09c85c6.bindTooltip(
+                `<div>
+                     Puerto Ayora (Galápagos) - Tortoises & Snorkeling
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a79363ae3659b0d41f1934cc4f79364d = L.marker(
+                [-0.9616, -91.1281],
+                {}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var icon_45b629f1d4f63220af76ca6d955e09d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a79363ae3659b0d41f1934cc4f79364d.setIcon(icon_45b629f1d4f63220af76ca6d955e09d6);
+        
+    
+        var popup_dada7d80375845556f6f479b173e5025 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6231961461b132ae6f404d87fdc89e64 = $(`<div id="html_6231961461b132ae6f404d87fdc89e64" style="width: 100.0%; height: 100.0%;">Los Túneles (Isabela) - Snorkeling with Sharks</div>`)[0];
+            popup_dada7d80375845556f6f479b173e5025.setContent(html_6231961461b132ae6f404d87fdc89e64);
+        
+
+        marker_a79363ae3659b0d41f1934cc4f79364d.bindPopup(popup_dada7d80375845556f6f479b173e5025)
+        ;
+
+        
+    
+    
+            marker_a79363ae3659b0d41f1934cc4f79364d.bindTooltip(
+                `<div>
+                     Los Túneles (Isabela) - Snorkeling with Sharks
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_662afeade1a56bf6a2a20321a46bdcbf = L.marker(
+                [-0.8253, -89.5234],
+                {}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var icon_82a3c09dc5b3d3afee4176b2408c5baa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_662afeade1a56bf6a2a20321a46bdcbf.setIcon(icon_82a3c09dc5b3d3afee4176b2408c5baa);
+        
+    
+        var popup_242c45f94be3d96881bfb6b1b893475b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ea70f7958da69d1a0b59358b6279178 = $(`<div id="html_8ea70f7958da69d1a0b59358b6279178" style="width: 100.0%; height: 100.0%;">Kicker Rock (San Cristóbal) - Shark Snorkeling</div>`)[0];
+            popup_242c45f94be3d96881bfb6b1b893475b.setContent(html_8ea70f7958da69d1a0b59358b6279178);
+        
+
+        marker_662afeade1a56bf6a2a20321a46bdcbf.bindPopup(popup_242c45f94be3d96881bfb6b1b893475b)
+        ;
+
+        
+    
+    
+            marker_662afeade1a56bf6a2a20321a46bdcbf.bindTooltip(
+                `<div>
+                     Kicker Rock (San Cristóbal) - Shark Snorkeling
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efcd548cbefeee7b56eb7d6bea946de6 = L.marker(
+                [-0.9636, -80.7497],
+                {}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var icon_1468930dc3781840706b072e4f8147d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_efcd548cbefeee7b56eb7d6bea946de6.setIcon(icon_1468930dc3781840706b072e4f8147d4);
+        
+    
+        var popup_68e10f4e11a4d898632deaf725bfa7dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f22013f13168e690a682b5353ad8e077 = $(`<div id="html_f22013f13168e690a682b5353ad8e077" style="width: 100.0%; height: 100.0%;">Santa Marianita (Kitesurfing)</div>`)[0];
+            popup_68e10f4e11a4d898632deaf725bfa7dc.setContent(html_f22013f13168e690a682b5353ad8e077);
+        
+
+        marker_efcd548cbefeee7b56eb7d6bea946de6.bindPopup(popup_68e10f4e11a4d898632deaf725bfa7dc)
+        ;
+
+        
+    
+    
+            marker_efcd548cbefeee7b56eb7d6bea946de6.bindTooltip(
+                `<div>
+                     Santa Marianita (Kitesurfing)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6864f7d84cab518aa50bb3125c207d02 = L.marker(
+                [-0.9478, -80.736],
+                {}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var icon_a86f5d51166913c80efb930b546bf6be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6864f7d84cab518aa50bb3125c207d02.setIcon(icon_a86f5d51166913c80efb930b546bf6be);
+        
+    
+        var popup_2f71dd759078b09a1e3892eaae2ade9e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6abc404976728d09a1d3f909c954db35 = $(`<div id="html_6abc404976728d09a1d3f909c954db35" style="width: 100.0%; height: 100.0%;">Manta (Nearest Airport to Santa Marianita)</div>`)[0];
+            popup_2f71dd759078b09a1e3892eaae2ade9e.setContent(html_6abc404976728d09a1d3f909c954db35);
+        
+
+        marker_6864f7d84cab518aa50bb3125c207d02.bindPopup(popup_2f71dd759078b09a1e3892eaae2ade9e)
+        ;
+
+        
+    
+    
+            marker_6864f7d84cab518aa50bb3125c207d02.bindTooltip(
+                `<div>
+                     Manta (Nearest Airport to Santa Marianita)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3cd4a5a7fcb785a1eff8e89b8f994f21 = L.marker(
+                [-0.762, -90.3343],
+                {}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var icon_1effdc7ec661934c149da0984383290c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3cd4a5a7fcb785a1eff8e89b8f994f21.setIcon(icon_1effdc7ec661934c149da0984383290c);
+        
+    
+        var popup_2e676d59f1079221e77e11bb16d3151e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7ce166300ca4aee931a631e77446b4d = $(`<div id="html_d7ce166300ca4aee931a631e77446b4d" style="width: 100.0%; height: 100.0%;">Tortuga Bay (Galápagos) - Kayaking & Beach</div>`)[0];
+            popup_2e676d59f1079221e77e11bb16d3151e.setContent(html_d7ce166300ca4aee931a631e77446b4d);
+        
+
+        marker_3cd4a5a7fcb785a1eff8e89b8f994f21.bindPopup(popup_2e676d59f1079221e77e11bb16d3151e)
+        ;
+
+        
+    
+    
+            marker_3cd4a5a7fcb785a1eff8e89b8f994f21.bindTooltip(
+                `<div>
+                     Tortuga Bay (Galápagos) - Kayaking & Beach
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc362b04aedccd1c1196eb5e1a83ffe6 = L.marker(
+                [-0.7464, -90.3141],
+                {}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var icon_3f55a6c42a46e8dee826feb7a54d9cd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cc362b04aedccd1c1196eb5e1a83ffe6.setIcon(icon_3f55a6c42a46e8dee826feb7a54d9cd5);
+        
+    
+        var popup_30cceae7c785127b6d0b2fd39fef0ebd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8cd3084d2fdbef063e5f22c54bcb853d = $(`<div id="html_8cd3084d2fdbef063e5f22c54bcb853d" style="width: 100.0%; height: 100.0%;">Las Grietas (Galápagos) - Swimming Spot</div>`)[0];
+            popup_30cceae7c785127b6d0b2fd39fef0ebd.setContent(html_8cd3084d2fdbef063e5f22c54bcb853d);
+        
+
+        marker_cc362b04aedccd1c1196eb5e1a83ffe6.bindPopup(popup_30cceae7c785127b6d0b2fd39fef0ebd)
+        ;
+
+        
+    
+    
+            marker_cc362b04aedccd1c1196eb5e1a83ffe6.bindTooltip(
+                `<div>
+                     Las Grietas (Galápagos) - Swimming Spot
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0fb544dd8b4edbfc76d6d2955f5c8d68 = L.marker(
+                [-0.8303, -91.1366],
+                {}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var icon_2e8b1aa673e85429d3c60f77a57f267f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0fb544dd8b4edbfc76d6d2955f5c8d68.setIcon(icon_2e8b1aa673e85429d3c60f77a57f267f);
+        
+    
+        var popup_6a951d95e858ad75b934c6f87aa633af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31bfc8978600ee27f25fff84632595f4 = $(`<div id="html_31bfc8978600ee27f25fff84632595f4" style="width: 100.0%; height: 100.0%;">Sierra Negra Volcano (Isabela) - Hiking</div>`)[0];
+            popup_6a951d95e858ad75b934c6f87aa633af.setContent(html_31bfc8978600ee27f25fff84632595f4);
+        
+
+        marker_0fb544dd8b4edbfc76d6d2955f5c8d68.bindPopup(popup_6a951d95e858ad75b934c6f87aa633af)
+        ;
+
+        
+    
+    
+            marker_0fb544dd8b4edbfc76d6d2955f5c8d68.bindTooltip(
+                `<div>
+                     Sierra Negra Volcano (Isabela) - Hiking
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac573e1e55ef0960295722a95d18e4d5 = L.marker(
+                [-1.4153, -78.4132],
+                {}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var icon_b79e7e512acc33f88ac3b48417883692 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ac573e1e55ef0960295722a95d18e4d5.setIcon(icon_b79e7e512acc33f88ac3b48417883692);
+        
+    
+        var popup_6dd5f11c1e7ef6ee2237f7f648baa93f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f723df501e662a5dce22656e2bda8c8 = $(`<div id="html_3f723df501e662a5dce22656e2bda8c8" style="width: 100.0%; height: 100.0%;">Ruta de las Cascadas (Baños) - Biking</div>`)[0];
+            popup_6dd5f11c1e7ef6ee2237f7f648baa93f.setContent(html_3f723df501e662a5dce22656e2bda8c8);
+        
+
+        marker_ac573e1e55ef0960295722a95d18e4d5.bindPopup(popup_6dd5f11c1e7ef6ee2237f7f648baa93f)
+        ;
+
+        
+    
+    
+            marker_ac573e1e55ef0960295722a95d18e4d5.bindTooltip(
+                `<div>
+                     Ruta de las Cascadas (Baños) - Biking
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d55ffd0589b1a0402b5ac9ae8603b4ff = L.marker(
+                [-1.3916, -78.4188],
+                {}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var icon_d0d682bb787e88da6d32a3a9d531e3bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d55ffd0589b1a0402b5ac9ae8603b4ff.setIcon(icon_d0d682bb787e88da6d32a3a9d531e3bb);
+        
+    
+        var popup_7d552d4e1b2728cb44064d7a44a7ec78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e20c45396133a9b7ad6902612e42b4f = $(`<div id="html_6e20c45396133a9b7ad6902612e42b4f" style="width: 100.0%; height: 100.0%;">Casa del Árbol (Baños) - Swing at the End of the World</div>`)[0];
+            popup_7d552d4e1b2728cb44064d7a44a7ec78.setContent(html_6e20c45396133a9b7ad6902612e42b4f);
+        
+
+        marker_d55ffd0589b1a0402b5ac9ae8603b4ff.bindPopup(popup_7d552d4e1b2728cb44064d7a44a7ec78)
+        ;
+
+        
+    
+    
+            marker_d55ffd0589b1a0402b5ac9ae8603b4ff.bindTooltip(
+                `<div>
+                     Casa del Árbol (Baños) - Swing at the End of the World
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_41516e6d3108daacd1acec7fdd45ad8b = L.marker(
+                [-1.4091, -78.4173],
+                {}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var icon_8277208b53ed8abf59d05c94242a77f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_41516e6d3108daacd1acec7fdd45ad8b.setIcon(icon_8277208b53ed8abf59d05c94242a77f6);
+        
+    
+        var popup_2fff2192d1d9c1224b8aab0e850f97ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_afcd1b2c449abe5e8c4b4d8f71718149 = $(`<div id="html_afcd1b2c449abe5e8c4b4d8f71718149" style="width: 100.0%; height: 100.0%;">Pailón del Diablo (Baños) - Waterfall</div>`)[0];
+            popup_2fff2192d1d9c1224b8aab0e850f97ea.setContent(html_afcd1b2c449abe5e8c4b4d8f71718149);
+        
+
+        marker_41516e6d3108daacd1acec7fdd45ad8b.bindPopup(popup_2fff2192d1d9c1224b8aab0e850f97ea)
+        ;
+
+        
+    
+    
+            marker_41516e6d3108daacd1acec7fdd45ad8b.bindTooltip(
+                `<div>
+                     Pailón del Diablo (Baños) - Waterfall
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7cca9ecb9afc1deec6662feb18991df3 = L.marker(
+                [-1.4606, -78.3656],
+                {}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var icon_0e51b7d22ea9ad16a7f4ee66e1b0f991 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7cca9ecb9afc1deec6662feb18991df3.setIcon(icon_0e51b7d22ea9ad16a7f4ee66e1b0f991);
+        
+    
+        var popup_e485ec13c1491af8161609f296d4faf9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ebc6731807805115c1f830c4ad8d69a = $(`<div id="html_1ebc6731807805115c1f830c4ad8d69a" style="width: 100.0%; height: 100.0%;">Pastaza River (Baños) - Whitewater Rafting</div>`)[0];
+            popup_e485ec13c1491af8161609f296d4faf9.setContent(html_1ebc6731807805115c1f830c4ad8d69a);
+        
+
+        marker_7cca9ecb9afc1deec6662feb18991df3.bindPopup(popup_e485ec13c1491af8161609f296d4faf9)
+        ;
+
+        
+    
+    
+            marker_7cca9ecb9afc1deec6662feb18991df3.bindTooltip(
+                `<div>
+                     Pastaza River (Baños) - Whitewater Rafting
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80d5269e4e168ab380290be18dad6957 = L.marker(
+                [-1.4018, -78.4201],
+                {}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var icon_466f861e7efa7e9abbc94e052ff2715e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_80d5269e4e168ab380290be18dad6957.setIcon(icon_466f861e7efa7e9abbc94e052ff2715e);
+        
+    
+        var popup_a7a81b0eacfb659548788abe602bf60e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_032795da1687820f73a02dd282c34ec2 = $(`<div id="html_032795da1687820f73a02dd282c34ec2" style="width: 100.0%; height: 100.0%;">Luna Volcán Spa (Baños) - Relaxation</div>`)[0];
+            popup_a7a81b0eacfb659548788abe602bf60e.setContent(html_032795da1687820f73a02dd282c34ec2);
+        
+
+        marker_80d5269e4e168ab380290be18dad6957.bindPopup(popup_a7a81b0eacfb659548788abe602bf60e)
+        ;
+
+        
+    
+    
+            marker_80d5269e4e168ab380290be18dad6957.bindTooltip(
+                `<div>
+                     Luna Volcán Spa (Baños) - Relaxation
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d1afaed8266653a7e230c7604d24f6ec = L.polyline(
+                [[-0.1807, -78.4675], [-0.6808, -78.437]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var poly_line_feffde9d9dfe7adc11a185030f4d7203 = L.polyline(
+                [[-0.6808, -78.437], [-1.3964, -78.4247]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var poly_line_20352831a951b59e2a005a3741cbb605 = L.polyline(
+                [[-1.3964, -78.4247], [-2.1894, -79.8891]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var poly_line_f68799822f8ad70058a38c18a398ffbe = L.polyline(
+                [[-2.1894, -79.8891], [-0.4444, -90.2786]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var poly_line_56c123017899454ff67a91bfa1b3421e = L.polyline(
+                [[-0.4444, -90.2786], [-0.7406, -90.3133]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var poly_line_d323fa604fac91900dc3188a0a96a820 = L.polyline(
+                [[-2.1894, -79.8891], [-0.9478, -80.736]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+    
+            var poly_line_a75c6f922d51835f8dd13160a2ca0259 = L.polyline(
+                [[-0.9478, -80.736], [-0.9636, -80.7497]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_ef562586c8eb40804b00d7b341ec6ae6);
+        
+</script>
+</html>
